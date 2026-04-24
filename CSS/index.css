@@ -1,0 +1,304 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*MOBILE 1ST STYLING */
+
+/* Header and Nav Styling */
+header{
+    width: 100%;
+    height: 4rem;
+    background-color: whitesmoke;
+    border-bottom: 3px solid rgba(0, 0, 0, 0.3);
+    top: 0;
+    position: sticky;
+    z-index: 222;
+}
+
+header nav{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    padding: 0 1rem;
+}
+
+ul li { 
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+header .desktop-nav-link,
+header nav > a {
+    display: none;
+}
+
+/* Logo styling */
+.logo{
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+}
+
+.logo span:nth-child(1) {
+    
+    color: darkblue;
+    padding: 0.2rem 0.5rem;
+    font-size: 20px;
+    font-weight: 900;
+    border-radius: 10px;
+    width: 100%;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.3);
+}
+
+.logo span:nth-child(1) sup {
+    font-size: 0.45em;
+    vertical-align: super;
+    letter-spacing: 1px;
+    text-decoration: underline;
+    color: rgba(184, 134, 11, 3);
+    font-weight: 900;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.6);
+}
+
+.mobile ul.mobile-dropdown{ 
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    top: 100%;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    right: 0;
+    padding: 0.3rem 1rem;
+    width: 30%;
+    max-width: 12rem;
+    display: none;
+    color: darkblue;
+
+}
+
+/* HERO */
+.hero {
+    height: 80vh;
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+    url('../Images/cozy-lively-home-interior-design.jpg') center/cover;
+
+    /* background-image: url(../Images/abstract-design-background\ \(1\).jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat; */
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 2.5rem;
+}
+
+.btn {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px 20px;
+    background: gold;
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 10px;
+}
+
+/* PRODUCTS */
+.products {
+    padding: 40px;
+    text-align: center;
+}
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    /*grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(1, 1fr); */
+    gap: 20px;
+}
+
+.product-card {
+    background: white;
+    padding: 15px;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+.product-card:hover {
+    transform: translateY(5px);
+}
+
+.product-card img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+}
+
+/* CATEGORIES */
+.categories {
+    display: grid;
+    padding: 50px;
+    text-align: center;
+}
+
+.categories h2{
+    margin-bottom: 1rem;
+}
+
+.category-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+.category:hover {
+    transform: translateY(-5px);
+    box-shadow: ;
+}
+
+.category-grid div:nth-child(1) {
+    height: 25vh;
+    background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)),
+    url('../Images/cozy-lively-home-interior-design.jpg') center/cover;
+    border-radius: 10px;
+}
+
+.category-grid div:nth-child(1) a {
+    color: white;
+    font-weight: 900;
+    font-size: 1rem;
+    align-content: center;
+} 
+
+.category-grid div:nth-child(2) {
+    height: 25vh;
+    background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)),
+    url('../Images/pexels-curtis-adams-1694007-15409514.jpg') center/cover;
+    border-radius: 10px;
+}
+
+.category-grid div:nth-child(2) a {
+    color: white;
+    font-weight: 900;
+    font-size: 1rem;
+    align-content: center;
+} 
+
+.category-grid div:nth-child(3) {
+    height: 25vh;
+    background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)),
+    url('../Images/pexels-curtis-adams-1694007-15062163.jpg') center/cover;
+    border-radius: 10px;
+}
+
+.category-grid div:nth-child(3) a {
+    color: white;
+    font-weight: 900;
+    font-size: 1rem;
+    align-content: center;
+} 
+
+.category-grid div:nth-child(4) {
+    height: 25vh;
+    background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)),
+    url('../Images/pexels-dauphotographer-30947456.jpg') center/cover;
+    border-radius: 10px;
+}
+
+.category-grid div:nth-child(4) a {
+    color: white;
+    font-weight: 900;
+    font-size: 1rem;
+    align-content: center;
+    padding-top: 200px;
+} 
+
+/* DEALS */
+.deals {
+    background: darkgoldenrod;
+    color: white;
+    padding: 40px;
+    text-align: center;
+}
+
+/* WHY */
+.why {
+    padding: 40px;
+    text-align: center;
+}
+
+.why-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 20px;
+}
+
+/* FOOTER */
+.footer {
+    background: #111;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+.socials {
+    margin-top: 1rem;
+    cursor: pointer;
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+}
+
+
+/* Tablet view */
+@media (min-width: 768px) {
+    
+}
+
+/* Bigger Screens view */
+@media (min-width: 1024px) {
+    
+    
+    .mobile button {
+        display: none;
+    }
+
+    header nav > a {
+        display: inline-block;
+    }
+
+    header .desktop-nav-link {
+    display: flex;
+    gap: 2.5rem;
+    }
+
+    header .desktop-nav-link a {
+        color: black;
+        font-size: 0.95rem;
+        font-weight: 900;
+    }
+
+header nav {
+    width: 90%;
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+
+
+
+}
