@@ -1,0 +1,232 @@
+/*CSS by Member 2 Chukwuka Mamah STARTED*/
+    * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: #fafafa;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        .header {
+            background: #fff;
+            border-bottom: 1px solid #e5e5e5;
+            padding: 1rem 0;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 1rem;
+        }
+
+        .header h1 {
+            font-size: 1.5rem;
+            font-weight: 600;
+            color: #1a1a1a;
+        }
+
+        .main-content {
+            display: flex;
+            gap: 2rem;
+            max-width: 1200px;
+            margin: 2rem auto;
+            padding: 0 1rem;
+        }
+
+        .sidebar {
+            flex: 0 0 250px;
+            background: #fff;
+            padding: 1.5rem;
+            border-radius: 8px;
+            border: 1px solid #e5e5e5;
+            height: fit-content;
+            position: sticky;
+            top: 5rem;
+        }
+
+        .sidebar h2 {
+            font-size: 1.1rem;
+            margin-bottom: 1.5rem;
+            color: #1a1a1a;
+        }
+
+        .filter-group {
+            margin-bottom: 2rem;
+        }
+
+        .filter-group h3 {
+            font-size: 0.95rem;
+            font-weight: 600;
+            margin-bottom: 0.75rem;
+            color: #444;
+        }
+
+        .filter-group label {
+            display: block;
+            margin-bottom: 0.5rem;
+            font-size: 0.9rem;
+            cursor: pointer;
+            color: #666;
+        }
+
+        .filter-group input[type="checkbox"] {
+            margin-right: 0.5rem;
+            accent-color: #c7a17a;
+        }
+
+        .price-filter {
+            display: flex;
+            flex-direction: column;
+            gap: 0.5rem;
+        }
+
+        .price-filter input[type="range"] {
+            width: 100%;
+            accent-color: #c7a17a;
+        }
+
+        .price-values {
+            display: flex;
+            justify-content: space-between;
+            font-size: 0.85rem;
+            color: #666;
+        }
+
+        .clear-filters {
+            width: 100%;
+            padding: 0.5rem;
+            background: #f0f0f0;
+            border: 1px solid #ddd;
+            border-radius: 6px;
+            font-size: 0.85rem;
+            cursor: pointer;
+        }
+
+        .clear-filters:hover {
+            background: #e5e5e5;
+        }
+
+        .products-section {
+            flex: 1;
+        }
+
+        .page-heading {
+            font-size: 2rem;
+            font-weight: 700;
+            margin-bottom: 1.5rem;
+            color: #1a1a1a;
+        }
+
+        .product-count {
+            color: #666;
+            margin-bottom: 1.5rem;
+            font-size: 0.9rem;
+        }
+
+        .product-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+            gap: 1.5rem;
+        }
+
+        .product-card {
+            background: #fff;
+            border: 1px solid #e5e5e5;
+            border-radius: 8px;
+            overflow: hidden;
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+
+        .product-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 8px 24px rgba(0,0,0,0.08);
+        }
+
+        .product-card.hidden {
+            display: none;
+        }
+
+        .product-image {
+            width: 100%;
+            height: 240px;
+            object-fit: cover;
+            background: #f0f0f0;
+        }
+
+        .product-info {
+            padding: 1rem;
+        }
+
+        .product-name {
+            font-size: 1rem;
+            font-weight: 500;
+            margin-bottom: 0.5rem;
+            color: #1a1a1a;
+        }
+
+        .product-price {
+            font-size: 1.1rem;
+            font-weight: 600;
+            color: #c7a17a;
+            margin-bottom: 1rem;
+        }
+
+        .add-to-cart {
+            width: 100%;
+            padding: 0.65rem;
+            background: #1a1a1a;
+            color: #fff;
+            border: none;
+            border-radius: 6px;
+            font-size: 0.9rem;
+            font-weight: 500;
+            cursor: pointer;
+            transition: background 0.2s ease;
+        }
+
+        .add-to-cart:hover {
+            background: #c7a17a;
+        }
+
+        .no-results {
+            grid-column: 1 / -1;
+            text-align: center;
+            padding: 3rem 1rem;
+            color: #666;
+            display: none;
+        }
+
+/*CSS by Member 2 Chukwuka Mamah ENDED*/
+
+/* Tablet view */
+@media (min-width: 768px) {
+
+    /*CSS by Member 2 Chukwuka Mamah STARTED*/
+     .main-content {
+                flex-direction: column;
+            }
+            
+            .sidebar {
+                position: static;
+                flex: 1;
+            }
+
+            .product-grid {
+                grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+                gap: 1rem;
+            }
+
+            .page-heading {
+                font-size: 1.5rem;
+            }
+
+    /*CSS by Member 2 Chukwuka Mamah ENDED*/
+    
+}
