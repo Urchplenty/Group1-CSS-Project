@@ -1,3 +1,5 @@
+/*CSS By Member 1 Udensi Okechukwu STARTED*/
+
 *{
     margin: 0;
     padding: 0;
@@ -262,16 +264,23 @@ header nav > a {
     gap: 1rem;
     justify-content: center;
 }
+/*CSS by Member 1 Udensi Okechukwu ENDED*/
+
 
 
 /* Tablet view */
 @media (min-width: 768px) {
+    /*CSS by Member 2 Chukwuka Mamah STARTED*/
+
+
+    /*CSS by Member 2 Chukwuka Mamah ENDED*/
     
 }
 
 /* Bigger Screens view */
 @media (min-width: 1024px) {
-    
+
+    /*CSS By Member 1 Udensi Okechukwu STARTED*/
     
     .mobile button {
         display: none;
@@ -298,7 +307,10 @@ header nav {
     margin: 0 auto;
 }
 
+/*CSS By Member 1 Udensi Okechukwu ENDED*/
 
+
+/*CSS By Member  START*/
 
 
 }
