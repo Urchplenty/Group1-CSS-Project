@@ -1,0 +1,126 @@
+       
+* {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            line-height: 1.6;
+            background-color: #f4f4f4;
+            color: #333;
+
+        }
+
+        /* HERO */
+        article {
+            background: url('contact-bg.jpg') no-repeat center/cover;
+            text-align: center;
+            padding: 80px 20px;
+        }
+
+        article h1 {
+            color: rgb(8, 8, 8);
+            font-size: 3rem;
+        }
+
+        article p {
+            color: rgb(8, 8, 8);
+            font-size: 1.2rem;
+        }
+
+        /* SECTIONS */
+        section {
+            padding: 40px 20px;
+            max-width: 1000px;
+            margin: auto;
+        }
+
+        h2 {
+            margin-bottom: 20px;
+            color: #222;
+        }
+
+        /* FORM */
+        form {
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+
+        form label {
+            font-weight: bold;
+        }
+
+        form input,
+        form textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 8px 0 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        form button {
+            background: #007BFF;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        form button:hover {
+            background: #0056b3;
+        }
+
+        /* CONTACT INFO */
+        #contact-info {
+            background: white;
+            border-radius: 8px;
+            margin-top: 20px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+
+        #contact-info ul {
+            list-style: none;
+            margin-top: 10px;
+        }
+
+        #contact-info li {
+            margin-bottom: 8px;
+        }
+
+        #contact-info a {
+            color: #007BFF;
+            text-decoration: none;
+        }
+
+        #contact-info a:hover {
+            text-decoration: underline;
+        }
+
+        /* FAQ */
+        #faq details {
+            background: white;
+            padding: 15px;
+            margin-bottom: 10px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        #faq summary {
+            font-weight: bold;
+        }
+
+        #faq p {
+            margin-top: 10px;
+        }
+
+        /* MAP */
+        #map iframe {
+            border-radius: 8px;
+            
+        }
